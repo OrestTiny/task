@@ -1,0 +1,91 @@
+.fg-body {
+  position: relative;
+}
+
+.fg-card {
+  position: absolute;
+  display: block;
+  opacity: 1;
+}
+
+.fg-card.animate {
+  transition: all 200ms ease-in-out;
+}
+
+.fg-card.active {
+  transform-origin: 50% 100%;
+}
+
+.fg-card.active.top {
+  transform-origin: 50% 0%;
+}
+
+.fg-card.active.left {
+  transform-origin: 0% 50%;
+}
+
+.fg-card.active.right {
+  transform-origin: 100% 50%;
+}
+
+.fg-card img {
+  display: block;
+}
+
+.fg-card.fg-flipping {
+  transform: scale(1.5);
+  opacity: 0;
+}
+
+.fg-card.fg-flipping.top {
+  transform: scale(2);
+  opacity: 0;
+}
+
+.fg-card.fg-flipping.left {
+  transform: scale(2);
+  opacity: 0;
+}
+
+.fg-card.fg-flipping.right {
+  transform: scale(2);
+  opacity: 0;
+}
+
+.fg-caption {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  margin: 10px 0;
+  top: 100%;
+  transition: all 0.5s ease-in-out;
+}
+
+.flipping_back_hide>* {
+  opacity: 0 !important;
+}
+
+.flipping_back_hide>*:first-child,
+.flipping_back_hide>*:last-child {
+  opacity: 1 !important;
+}
+
+.flipping_subback_hide>*:nth-child(3) {
+  opacity: 0 !important;
+}
+
+.btn-img img {
+  width: 50px;
+}
+
+.fg-navigation .btn-img,
+.fg-navigation .btn-name {
+  display: none;
+}
+
+.fg-social {
+  font-size: 20px;
+  color: red;
+  opacity: 1;
+  display: block;
+}

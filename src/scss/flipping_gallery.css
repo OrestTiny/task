@@ -1,0 +1,241 @@
+.fg-body {
+  position: relative;
+  order: 3;
+  height: 533px;
+  width: 400px;
+}
+
+.fg-card {
+  position: absolute;
+  display: block;
+  opacity: 1;
+}
+
+.fg-card.animate {
+  transition: all 200ms ease-in-out;
+}
+
+.fg-card.active {
+  transform-origin: 50% 100%;
+  height: 533px;
+  width: 400px;
+}
+
+.fg-card.active.top {
+  transform-origin: 50% 0%;
+}
+
+.fg-card.active.left {
+  transform-origin: 0% 50%;
+}
+
+.fg-card.active.right {
+  transform-origin: 100% 50%;
+}
+
+.fg-card img {
+  display: block;
+  width: 400px;
+  height: 533px;
+}
+
+.fg-card.fg-flipping {
+  transform: scale(1.5);
+  opacity: 0;
+}
+
+.fg-card.fg-flipping.top {
+  transform: scale(2);
+  opacity: 0;
+}
+
+.fg-card.fg-flipping.left {
+  transform: scale(2);
+  opacity: 0;
+}
+
+.fg-card.fg-flipping.right {
+  transform: scale(2);
+  opacity: 0;
+}
+
+/* .fg-caption {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  margin: 10px 0;
+  top: 100%;
+  transition: all 0.5s ease-in-out;
+} */
+
+.flipping_back_hide>* {
+  opacity: 0 !important;
+}
+
+
+.flipping_subback_hide>*:nth-child(3) {
+  opacity: 0 !important;
+}
+
+.flipping_back_hide>*:first-child {
+  opacity: 1 !important;
+}
+
+.flipping_back_hide>*:last-child {
+  opacity: 0 !important;
+}
+
+.fg-navigation .btn-img,
+.fg-navigation .btn-name {
+  display: none;
+}
+
+.fg-social {
+  font-size: 20px;
+  color: red;
+  opacity: 1;
+  display: block;
+}
+
+
+
+.wrapper {
+  margin: 0 auto;
+  height: 533px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.pointer {
+  color: #00B0FF;
+  font-family: 'Pacifico';
+  font-size: 24px;
+  margin-top: 15px;
+  position: absolute;
+  top: 130px;
+  right: -40px;
+}
+
+
+
+.main {
+  float: left;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.main h1 {
+  padding: 20px 50px 10px;
+  float: left;
+  width: 100%;
+  font-size: 60px;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  font-weight: 100;
+  margin: 0;
+  padding-top: 25px;
+  font-family: 'Noto Serif';
+  font-style: italic;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+}
+
+.main h1.demo1 {
+  background: #1ABC9C;
+}
+
+.reload.bell {
+  font-size: 12px;
+  padding: 20px;
+  width: 45px;
+  text-align: center;
+  height: 47px;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+}
+
+.reload.bell #notification {
+  font-size: 25px;
+  line-height: 140%;
+}
+
+
+.clear {
+  width: auto;
+}
+
+
+.btns {
+  width: 410px;
+  margin: 50px auto;
+}
+
+.credit {
+  font-family: "noto serif";
+  font-style: italic;
+  text-align: center;
+  color: #3D5455;
+  color: rgba(255, 255, 255, 0.35);
+  padding: 10px;
+  margin: 0 0 40px 0;
+  float: left;
+  width: 100%;
+  letter-spacing: 1px;
+}
+
+.credit a {
+  text-decoration: none;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.55);
+}
+
+.back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: center;
+  display: block;
+  padding: 7px;
+  width: 100%;
+  box-sizing: border-box;
+  background: rgba(0, 0, 0, 0.25);
+  font-weight: bold;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.5);
+  transition: all 200ms ease-out;
+}
+
+.back:hover {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.page-container {
+  margin: auto;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.page-container>div {
+  flex: 1 1 50%;
+}
+
+.page-container p {
+  font-size: 21px;
+  font-weight: 100;
+  line-height: 180%;
+}
+
+.page-container h3 {
+  font-family: "noto serif";
+  font-size: 23px;
+}
+
+.fg-navigation {
+  order: 3;
+}
