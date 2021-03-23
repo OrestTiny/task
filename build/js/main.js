@@ -381,7 +381,7 @@ $(document).ready(function () {
         center: true,
         responsive: {
             480: {
-                items: 2
+                items: 1
             },
             600: {
                 items: 1
@@ -459,7 +459,7 @@ $(document).ready(function () {
         var th = $(this);
         var attribut = th.attr('href');
         var top = $(attribut).offset().top;
-
+        $('.burger-active').removeClass('burger-active');
         cPNLBool = false;
 
         $('html').animate({
@@ -490,6 +490,11 @@ $(document).ready(function () {
     });
 
 
+
+    $('.burger').click(function () {
+        $('.nav').toggleClass('burger-active')
+
+    })
 
 })
 
